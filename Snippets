@@ -1,0 +1,13 @@
+This is a snippet to get your PlayerID with okokNotify. https://forum.cfx.re/t/okoknotify-standalone-paid/3907758
+
+ESX = nil
+
+```
+Command creation
+
+RegisterCommand("id", function (command,rawCommand)
+
+ "ID " .. GetPlayerServerId(PlayerId()) .. ("!")
+    exports['okokNotify']:Alert("System", "Du bist ID " .. GetPlayerServerId(PlayerId()) .. ("!"), 3000, 'info')
+end)
+```
